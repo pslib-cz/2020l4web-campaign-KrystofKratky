@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 .4em;
+}
+
+nav a:hover {
+    text-shadow: #534F4E 3px 3px 6px;
+    transition: .2s;
+}
+
+.main_panel {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .4em;
+}
+
+header {
+    background-color: #F5F0ED;
+    height: 100vh;
+}
+
+h1 {
+    margin: 0 0 .2em 0;
+}
+
+.header_img {
+    background-image: url(./assets/IMG_9085_expozice.jpg);
+    width: 60%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header_description {
+    position: absolute;
+    left: 50em;
+    top: 10em;
+    width: 40%;
+}
+
+.name p {
+    font-weight: bold;
+}
+
+.button a {
+    text-align: center;
+    text-decoration: none;
+    padding: .4em 1em;
+}
+
+.button {
+    padding: 1em;
+}
+
+.light a {
+    background-color: #F5F0ED;
+    color: #534F4E;
+    border: #F5F0ED 3px solid;
+}
+
+.light a:hover {
+    background-color: white;
+    border: #F5F0ED 3px solid;
+    transition: 0.3s;
+}
+
+.dark a {
+    background-color: #534F4E;
+    color: white;
+    border: #534F4E 3px solid;
+}
+
+.dark a:hover {
+    background-color: white;
+    color: #534F4E;
+    border: #534F4E 3px solid;
+    transition: .3s;
+}
+
+
+#effects h2 {
+    margin-left: 8em;
+    margin-top: -1em;
+}
+
+.effect_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0 2em;
+}
+
+.leaves {
+    overflow: hidden;
+}
+
+#products h2 {
+    margin-left: 1em;
+}
+
+#special h2 {
+    margin-left: 1em;
+}
+
+.section {
+    width: 80%;
+    margin: auto;
+}
+
+.section img {
+    width: 90%;
+    border-radius: 2em;
+}
+
+.section figure {
+    width: 30%;
+    margin: 0;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 0;
+}
+
+.product .button {
+    padding-left: 0;
+}
+
+.product_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.product_about h3 {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #534F4E;
+    margin-top: 1em;
+    padding: 0 1em;
+}
+
+footer h4 {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main_panel {
+        height: 10vh;
+    }
+
+    .header_img {
+        width: 100%;
+        height: 90vh;
+        background-image: url(./assets/IMG_9085_expozice.jpg);
+    }
+
+    .header_description {
+        position: static;
+        width: 100%;
+        margin: -34em auto;
+        text-align: center;
+        
+    }
+
+    .header_description h1{
+        margin-bottom: 2em;
+    }
+
+    #effects h2 {
+        margin: -2.4em 0 0 0;
+        text-align: center;
+    }
+
+    .leaves {
+        margin-top: 8em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main_panel {
+        height: 10vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 0 .1em;
+    }
+
+    .header_img {
+        width: 100%;
+        height: 90vh;
+        background-image:  url(./assets/IMG_9085_expozice.jpg);
+    }
+
+    .header_description {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin: -32em auto;
+    }
+
+    .header_description h1{
+        margin-bottom: 3em;
+    }
+
+    .leaves {
+        margin-top: 8em;
+    }
+
+    #effects h2 {
+        margin: -2.6em 0 0 0;
+        text-align: center;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_about:nth-child(1) {
+        order: 1;
+    }
+
+    .product_about {
+        align-items: center;
+        width: 80%;
+    }
+
+    #products h2 {
+        margin-left: 0;
+    }
+
+    #special h2 {
+        margin-left: 0;
+    }
+
+    .section figure {
+        margin-bottom: 2em;
+    }
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section img {
+        border-radius: 1em;
+    }
+
+}
